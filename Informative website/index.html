@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Informative Webiste</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+        <style>
+            .blink {
+                animation: blinking 0.25s infinite;
+            }
+    
+            @keyframes blinking {
+                25% {
+                    color:white;
+                    background-color: red;
+                }
+                75%{
+                    color: white;
+                    background-color: white;
+                }
+            }
+        </style>
+    
+    </head>
+
+
+    <body>
+
+
+
+
+
+        <!-- navbar  -->
+        <div class="navbar  navbar-light bg-light text-dark navbar-expand-lg sticky-top">
+            <a href="#" class="navbar-brand h1 mb-0">
+                <img height="30" src="logo.png" alt="">
+                FrontEnd
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#my_options">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="my_options">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="HTML.html" class="nav-link ">HTML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="css.html" class="nav-link">CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript.html" class="nav-link">Javascript</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="bootstrap.html" class="nav-link">Bootstrap</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Frameworks</a>
+                        <div class="dropdown-menu">
+                            <a href="react.html" class="dropdown-item">React</a>
+                            <a href="vue.html" class="dropdown-item">Vue</a>
+                            <a href="tailwind.html" class="dropdown-item">Tailwind CSS</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="flutter.html" class="dropdown-item">Flutter</a>
+                        </div>
+                    </li>               
+                </ul>
+                <form class="form-inline ml-auto">
+                    <input type="text" class="form-control mr-2" placeholder="Search">
+                    <button class="btn btn-outline-success">Search</button>
+                    <button class="btn btn-outline-primary ml-2">LogIn/SignUp</button>
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <!-- carousel  -->
+        <div class="carousel slide" data-touch="false" data-ride="carousel" id="mycarousel">
+            <div class="carousel-inner ">
+                <!--##### 02 Add Controls Here in carousel-inner-->
+                <a href="#mycarousel" data-slide="prev" class="carousel-control-prev ">
+                    <div class="carousel-control-prev-icon "aria-hidden="true"></div>
+                </a>
+                <a href="#mycarousel" data-slide="next" class="carousel-control-next">
+                    <div class="carousel-control-next-icon"></div>
+                </a>
+                <!--##### 03 Add Indicators Here in carousel-inner-->
+                <ol class="carousel-indicators">
+                    <li data-target="#mycarousel" data-slide-to="0"></li>
+                    <li data-target="#mycarousel" data-slide-to="1"></li>
+                    <li data-target="#mycarousel" data-slide-to="2"></li>
+                    <li data-target="#mycarousel" data-slide-to="3"></li>
+                    <li data-target="#mycarousel" data-slide-to="4"></li>
+                    <li data-target="#mycarousel" data-slide-to="5"></li>
+                    <li data-target="#mycarousel" data-slide-to="6"></li>
+                    <li data-target="#mycarousel" data-slide-to="7"></li>
+                </ol>
+                <div class="carousel-item active">
+                    <img src="HTML.png" class="w-100 d-block mx-auto" style="height: 600px;">
+                    <div class="carousel-caption">
+                        <h5 class="h2 ">HTML</h5>
+                        <a href="HTML.html" class="btn btn-primary">Click to know more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="CSS.jpg" class="w-100 d-block mx-auto"style="height: 600px;">
+                    <div class="carousel-caption">
+                        <h5 class="h2 ">CSS</h5>
+                        <a href="css.html" class="btn btn-primary">Click to know more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="bootstarp.jpg" class="w-100 d-block mx-auto" style="height: 600px;">
+                    <div class="carousel-caption">
+                        <h5 class="h2 ">Bootstrap</h5>
+                        <a href="bootstrap.html" class="btn btn-primary">Click to know more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="javascript.png" class="w-100 d-block mx-auto" style="height: 600px;">
+                    <div class="carousel-caption">
+                        <h5 class="h2 ">Javascript</h5>
+                        <a href="javascript.html" class="btn btn-primary">Click to know more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="react.jpg" class="w-100 d-block mx-auto" style="height: 600px;">
+                    <div class="carousel-caption">
+                        <h5 class="h2 ">React.Js</h5>
+                        <a href="react.html" class="btn btn-primary">Click to know more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="vue.jpg" class="w-100 d-block mx-auto" style="height: 600px;">
+                    <div class="carousel-caption">
+                        <h5 class="h2 ">Vue.Js</h5>
+                        <a href="vue.html" class="btn btn-primary">Click to know more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="tailwind.jpg" class="w-100 d-block mx-auto" style="height: 600px;">
+                    <div class="carousel-caption">
+                        <h5 class="h2 ">Tailwind CSS</h5>
+                        <a href="tailwind.html" class="btn btn-primary">Click to know more</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="flutter.png" class="w-100 d-block mx-auto" style="height: 600px;">
+                    <div class="carousel-caption">
+                        <h5 class="h2 ">Flutter</h5>
+                        <a href="flutter.html" class="btn btn-primary">Click to know more</a>
+                    </div>
+                </div>
+        </div>
+
+
+
+
+
+
+        <!-- list items  -->
+        <div class=" container mt-4 row">
+
+            <div class="col-4">
+              <div class="list-group">
+                <a class="list-group-item list-group-item-action active" data-toggle="list" href="#html">HTML</a>
+                <a class="list-group-item list-group-item-action" data-toggle="list"  href="#css">CSS</a>
+                <a class="list-group-item list-group-item-action" data-toggle="list" href="#javascript" >Javascript</a>
+                <a class="list-group-item list-group-item-action" data-toggle="list" href="#bootstrap">Bootstrap</a>
+                <a class="list-group-item list-group-item-action" data-toggle="list" href="#react">React</a>
+                <a class="list-group-item list-group-item-action" data-toggle="list" href="#vue">Vue</a>
+                <a class="list-group-item list-group-item-action" data-toggle="list" href="#flutter">Flutter</a>
+                <a class="list-group-item list-group-item-action" data-toggle="list" href="#tailwind">Tailwind-CSS</a>
+              </div>
+            </div>
+
+            <div class="col-8">
+              <div class="tab-content">
+
+                <!-- Jumbotron addition HTML -->
+                <div class="tab-pane show active" id="html" >
+                    <div class="container">
+                        <div class="jumbotron">
+                            <h1>HTML</h1>
+                            <p class="text-justify">HTML, or HyperText Markup Language, is the fundamental coding language for creating web pages. It uses tags to structure content, defining elements like headings, paragraphs, links, and images. HTML documents consist of a hierarchical structure with the root `<html>` element, containing `<head>` for metadata and `<body>` for visible content. It facilitates the creation of hyperlinks, embeds images, supports lists, and provides form elements for interactive user input. As a markup language, HTML plays a crucial role in web development, forming the basis for building visually appealing and interactive websites in conjunction with CSS and JavaScript.</p>
+                            <a href="HTML.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jumbotron addition CSS -->
+                <div class="tab-pane show " id="css" >
+                    <div class="container">
+                        <div class="jumbotron">
+                            <h1>CSS</h1>
+                            <p class="text-justify">CSS, or Cascading Style Sheets, is a vital web technology used for styling and formatting HTML documents. It enables the separation of content from presentation by defining the visual appearance of elements. CSS employs selectors to target HTML elements and apply styles like colors, fonts, spacing, and layout. The "cascading" nature allows styles to be inherited and overridden, providing flexibility and consistency across a website. By centralizing styling instructions, CSS simplifies the maintenance and enhances the visual aesthetics of web pages, contributing to a more engaging and cohesive user experience. Together with HTML and JavaScript, CSS forms an integral part of front-end web development.</p>
+                            <a href="css.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jumbotron addition Javascript -->
+                <div class="tab-pane show " id="javascript" >
+                    <div class="container">
+                        <div class="jumbotron">
+                            <h1>JavaScript</h1>
+                            <p class="text-justify">JavaScript is a versatile scripting language primarily used for enhancing interactivity and dynamic behavior in web pages. It enables the manipulation of HTML content and the handling of user interactions within a browser. JavaScript is often employed to create responsive features such as form validation, image sliders, and interactive menus. As a client-side scripting language, it executes directly in the user's browser, reducing server load and improving user experience. In addition to front-end development, JavaScript is crucial for building modern web applications, where it interacts with server-side technologies through APIs (Application Programming Interfaces). Its adaptability and widespread support make JavaScript an essential component of the web development stack.</p>
+                            <a href="javascript.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jumbotron addition Bootstrap -->
+                <div class="tab-pane show " id="bootstrap" >
+                    <div class="container">
+                        <div class="jumbotron">
+                            <h1>Bootstrap</h1>
+                            <p class="text-justify">Bootstrap is a popular open-source front-end framework that simplifies and expedites web development. Developed by Twitter, it offers a collection of pre-designed HTML, CSS, and JavaScript components, including navigation bars, buttons, forms, and more. Bootstrap's responsive design ensures that websites look and function well on various devices and screen sizes. It also provides a grid system for easy layout structuring. By utilizing Bootstrap, developers can streamline the development process, maintain consistency across projects, and create visually appealing and responsive websites with minimal effort.</p>
+                            <a href="bootstrap.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jumbotron addition React -->
+                <div class="tab-pane show " id="react" >
+                    <div class="container">
+                        <div class="jumbotron">
+                            <h1>React</h1>
+                            <p class="text-justify">React is a popular JavaScript library for building user interfaces, developed and maintained by Facebook. It allows developers to create modular and reusable UI components, facilitating the development of interactive and efficient web applications. React utilizes a virtual DOM (Document Object Model) to optimize rendering performance, updating only the necessary parts of a page when data changes. The library follows a declarative approach, making it easier to understand and debug code. React's component-based architecture and one-way data flow contribute to a more maintainable and scalable codebase. With its focus on building UIs efficiently, React has become a cornerstone of modern front-end development, widely used in conjunction with other technologies to create robust and responsive web applications.</p>
+                            <a href="react.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jumbotron addition Vue -->
+                <div class="tab-pane show " id="vue" >
+                    <div class="container">
+                        <div class="jumbotron">
+                            <h1>Vue.js</h1>
+                            <p class="text-justify">Vue.js is a progressive JavaScript framework for building user interfaces. It excels in creating interactive and reactive web applications with a straightforward and flexible structure. Vue allows developers to build components, encapsulating both the HTML structure and JavaScript functionality, promoting reusability and maintainability. Its "reactivity" system enables automatic updating of the user interface when the underlying data changes. Vue.js is easy to integrate into existing projects, and its simplicity makes it accessible for both beginners and experienced developers. With a growing community and a well-designed ecosystem, Vue has become a popular choice for building modern and responsive web applications.</p>
+                            <a href="vue.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Jumbotron addition Flutter -->
+                <div class="tab-pane show " id="flutter" >
+                    <div class="container">
+                        <div class="jumbotron">
+                            <h1>Flutter</h1>
+                            <p class="text-justify">Flutter is an open-source UI software development toolkit created by Google for building natively compiled applications for mobile, web, and desktop from a single codebase. It uses the Dart programming language and offers a reactive framework that allows developers to create visually appealing and highly performant applications. Flutter's key feature is its "hot reload" capability, enabling developers to instantly view changes during the development process without restarting the application. The framework provides a rich set of pre-designed widgets for creating consistent and customizable user interfaces across different platforms. With its emphasis on productivity and expressive UI, Flutter has gained popularity as a powerful cross-platform solution for creating modern, interactive applications.</p>
+                            <a href="flutter.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Jumbotron addition Tailwind -->
+                <div class="tab-pane show " id="tailwind" >
+                    <div class="container">
+                        <div class="jumbotron">
+                            <h1>Tailwind-CSS</h1>
+                            <p class="text-justify">Tailwind CSS is a utility-first CSS framework that streamlines web development by providing a set of pre-designed, low-level utility classes. Rather than creating custom styles, developers can apply these classes directly in their HTML markup to achieve styling quickly. Tailwind's approach offers flexibility and scalability, allowing for easy customization and maintenance of styles. With a focus on utility classes for common design patterns, spacing, colors, and more, Tailwind accelerates the development process while maintaining a consistent and responsive design. It caters to developers who prefer a utility-first approach and facilitates the creation of modern, visually appealing interfaces without the need for extensive CSS writing.</p>
+                            <a href="tailwind.html" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- middle stuff  -->
+        <div class="container">
+            <div class="h2 d-block text-center">
+                Below courses on 
+                <span class="btn blink h1">Sale</span>
+                <hr>
+            </div>
+
+            <!-- row-1  -->
+            <div class="row my-3">
+                <div class="col">
+                    <div class="card mx-3">
+                        <div class="card-header">header</div>
+                        <div class="card-body">body</div>
+                        <div class="card-footer">footer</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mx-3">
+                        <div class="card-header">header</div>
+                        <div class="card-body">body</div>
+                        <div class="card-footer">footer</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mx-3">
+                        <div class="card-header">header</div>
+                        <div class="card-body">body</div>
+                        <div class="card-footer">footer</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- row-2  -->
+            <div class="row my-3">
+                <div class="col">
+                    <div class="card mx-3">
+                        <div class="card-header">header</div>
+                        <div class="card-body">body</div>
+                        <div class="card-footer">footer</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mx-3">
+                        <div class="card-header">header</div>
+                        <div class="card-body">body</div>
+                        <div class="card-footer">footer</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mx-3">
+                        <div class="card-header">header</div>
+                        <div class="card-body">body</div>
+                        <div class="card-footer">footer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- footer  -->
+        <div class="" style="background-color: black; opacity: 0.9;">
+            <div class="row">
+
+
+                <div class="container text-light col-1 ml-3 mt-5 ">
+                    <img src="logo.png" alt="" style="width: 100px;">
+                    <div class="btn btn-primary mt-2 ml-2">Contact</div>
+                </div>
+
+                <div class="container text-light col-1 ml-3 mt-3 mb-3 ">
+                    <h2>About</h2>
+                    <hr style="background-color: white;">
+                    <span>Contact Us</span><br>
+                    <span>About Us</span><br>
+                    <span>Carrers</span><br>
+                    <span>Stories</span><br>
+                    <span>Information</span><br>
+                </div>
+                <div class="container text-light col-1 ml-3 mt-3 mb-3">
+                    <h2>Help</h2>
+                    <hr style="background-color: white;">
+                    <span>Payment</span><br>
+                    <span>Shipping</span><br>
+                    <span>Returns</span><br>
+                    <span>FAQ</span><br>
+                    <span>Reports</span><br>
+                </div>
+                <div class="container text-light col-1 ml-3 mt-3 mb-3">
+                    <h2>Policy</h2>
+                    <hr style="background-color: white;">
+                    <span>Cancellation</span><br>
+                    <span>Terms of Use</span><br>
+                    <span>Security</span><br>
+                    <span>Privacy</span><br>
+                    <span>Sitemap</span><br>
+                    <span>EPR Compliance</span><br>
+                </div>
+                <div class="container text-light col-1 ml-3 mt-3 mb-3">
+                    <h2>Social</h2>
+                    <hr style="background-color: white;">
+                    <span>Facebook</span><br>
+                    <span>Twitter</span><br>
+                    <span>Youtube</span><br>
+                    <span>Instagram</span><br>
+                </div>
+                <div class="container col-1 ">
+                    <div style="width: 2px;background-color: white; height: 290px;" class="mx-auto mt-3"></div>
+                </div>
+                <div class="container text-light col-1 ml-3 mt-3 mb-3">
+                    <h2>Partners</h2>
+                    <hr style="background-color: white;">
+                    <span>Find a Partner</span><br>
+                    <span>Partner Solution</span><br>
+                    <span>Partner Portal</span><br>
+                </div>
+                <div class="container text-light col-2 ml-3 mt-3 mb-3">
+                    <h2>Legal</h2>
+                    <hr style="background-color: white;">
+                    <span>Privacy Commitment</span><br>
+                    <span>Code of Conduct</span><br>
+                    <span>Terms of Use</span><br>
+                    <span>Privacy Policy</span><br>
+                    <span>Impressum</span><br>
+                    <span>Labour Condition Application</span><br>
+                    <span>Gender Pay Gap Report</span><br>
+                    <span>UK Legal & Tax Statement</span><br>
+                </div>
+
+            </div>
+
+            <hr style="background-color: white;" class="container bg-light">
+            <div class="container text-light">
+                <div class="text-dark pb-4" >
+                    2024 VKC ,Inc. All rights reserved 
+                    <a href="" class="float-right">Know More</a> 
+                </div>
+                
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+    
+
+
+</html>
