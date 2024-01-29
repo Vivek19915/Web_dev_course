@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Badge</title>
+        <!-- linkning CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        <style>
+            .blink{
+                animation: blinking 0.25s infinite;
+            }
+            @keyframes blinking {
+                0%{
+                    color: white;
+                    background-color: red;
+                }
+                50%{
+                    color: white;
+                    background-color: white;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="container mt-5 w-25">
+            <div class="list-group">
+                <div class="list-group-item">
+                    Angular
+                    <!-- applying badge  -->
+                    <div class="badge badge-info">Framework</div>
+                </div>
+                <div class="list-group-item">
+                    ReactJS
+                    <!-- applying badge  -->
+                    <div class="badge badge-secondary">Lib</div>
+                </div>
+                <div class="list-group-item">
+                    Node.js
+                    <!-- applying badge  -->
+                    <div class="badge badge-primary badge-pill">Server</div>
+                </div>
+                <div class="list-group-item">
+                    Next.js
+                    <!-- applying badge  -->
+                    <div class="badge badge-danger blink">New</div>
+                </div>
+                <div class="list-group-item">
+                    Next.js
+                    <!-- applying badge  -->
+                    <a href="https://www.google.com/" class="badge badge-danger blink">SALE</a>
+                </div>
+            </div
+        </div>
+
+        <div class="btn blink ">button</div>
+        <div class="blink">
+            <input type="text" class="form-control">
+        </div>
+        
+
+    </body>
+</html>

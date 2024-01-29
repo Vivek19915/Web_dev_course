@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Badge</title>
+        <!-- linkning CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        <style>
+            .breadcrumb {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                padding: 0.75rem 1rem;
+                margin-bottom: 1rem;
+                list-style: none;
+                background-color: #e9ecef;
+                border-radius: 0.25rem;
+            }
+            .breadcrumb-item + .breadcrumb-item::before {
+                float: left;
+                padding-right: 0.5rem;
+                color: #6c757d;
+                content: "-";
+                }
+        </style> 
+    </head>
+
+    <body>
+        <div class="container mt-5">
+            <nav>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item active">Home</li>
+                    <li class="breadcrumb-item breadcrumb-divider:none">About</li>
+                    <li class="breadcrumb-item">Portfolio</li>
+                    <li class="breadcrumb-item">Contact</li>
+                    <li class="breadcrumb-item">Logout</li>
+
+                </ul>
+            </nav>
+        </div>
+        
+
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Conic Gradient</title>
+        <style>
+            .bg{
+                background: conic-gradient(from 0deg at 25% 25%,white,red);
+                background: conic-gradient(from 0deg at 25% 25%,white,red,white);
+                background: conic-gradient(from 0deg at 25% 25%,red,orange,white);
+                background: conic-gradient(from 45deg at 25% 25%,red,orange,white);
+                background: repeating-conic-gradient(blue 0deg , yellow 30deg);
+                background: repeating-conic-gradient(from 45deg at 50% 50%,blue 0deg , yellow 90deg);
+            }
+            div{
+                height: 500px;
+                width: 500px;
+                border-radius: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bg"></div>
+    </body>
+
+</html>

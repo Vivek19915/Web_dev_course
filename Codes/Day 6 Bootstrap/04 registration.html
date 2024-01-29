@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <!-- linkning CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class="conatinor mt-5 ml-5">
+            <div class="h1 text-info">Registration Form</div>
+            <form >
+                <!-- First Name  -->
+                <!-- forms groups using row and col  -->
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label>First Name:</label>
+                    </div>
+                    <div class="col-3">
+                        <input type="text" class="form-control">
+                        <small class="form-text text-danger">Enter First Name</small>
+                    </div>
+                </div>
+
+
+                <!-- Last Name  -->
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label>Last Name:</label>
+                    </div>
+                    <div class="col-3">
+                        <input type="text" class="form-control">
+                        <small class="form-text text-danger">Enter Last Name</small>
+                    </div>
+                </div>
+
+                <!-- Email  -->
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label>Email:</label>
+                    </div>
+                    <div class="col-3">
+                        <!-- this is imp to notice -- about making new div for input  -->
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <div class="input-group-append">
+                                <div class="input-group-text">@tcs.com</div>
+                            </div>
+                        </div>
+                        <small class="form-text text-danger">Enter email</small>
+                    </div>
+                </div>
+
+
+                <!-- Languages  -->
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label>Languages:</label>
+                    </div>
+                    <div class="col-3">
+                        
+                        <!-- checkbox using  bootstrap  -->
+                        <!-- mr-4 for margin right  -->
+                        <div class="form-check-inline">
+                            <input type="checkbox" class="form-check-input">
+                            <label class="form-check-label mr-4">Marathi</label>
+                            <input type="checkbox" class="form-check-input">
+                            <label class="form-check-label mr-4">Hindi</label>
+                            <input type="checkbox" class="form-check-input">
+                            <label class="form-check-label mr-4">Punjabi</label>
+                            
+                        </div>
+                        <small class="form-text text-danger">Select at least one language</small>
+                        
+                    </div>
+                </div>
+
+                <!-- Gender  -->
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label>Gender:</label>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check-inline">
+                            <input type="radio" class="form-check-input" name="gender">
+                            <label class="form-check-label mr-4">Male</label>
+                            <input type="radio" class="form-check-input" name="gender">
+                            <label class="form-check-label mr-4">Female</label>
+                            <input type="radio" class="form-check-input" name="gender">
+                            <label class="form-check-label mr-4">Others</label>
+                        </div>
+                        <small class="form-text text-danger">Select Gender</small>
+                    </div>
+                </div>
+
+                <!-- Address  -->
+                <div class="form-group row">
+                    <div class="col-2">
+                        <label>Address:</label>
+                    </div>
+                    <div class="col-3">
+                        <textarea class="form-control"></textarea>
+                        <small class="form-text text-danger">Enter Address</small>
+                    </div>
+                </div>
+
+                <!-- Submit  -->
+                <div class="row">
+                    <input type="submit" class="col-5 btn btn-success">
+                </div>
+                
+
+            </form>
+        </div>
+        
+
+    </body>
+
+</html>

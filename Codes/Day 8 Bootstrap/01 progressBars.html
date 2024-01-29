@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Progress Bar</title>
+        <!-- linkning CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container mt-5">
+
+            <!--Note class w wont work go with css-->
+            <div class="progress my-3">
+                <div class="progress-bar" style="width: 0%;">0%</div>
+            </div>
+            <div class="progress my-3">
+                <div class="progress-bar w-25">25%</div>
+            </div>
+            <div class="progress my-3">
+                <div class="progress-bar w-50">50%</div>
+            </div>
+            <div class="progress my-3">
+                <div class="progress-bar w-75">75%</div>
+            </div>
+            <div class="progress my-3">
+                <div class="progress-bar w-100">100%</div>
+            </div>
+            <hr>
+            <hr>
+
+
+
+            <div class="progress my-3" style=" height: 10px;">
+                <div class="progress-bar" style="width: 80%;">80%</div>
+            </div>
+            <div class="progress my-3" style=" height: 20px;">
+                <div class="progress-bar" style="width: 80%;">80%</div>
+            </div>
+            <div class="progress my-3" style=" height: 30px;">
+                <div class="progress-bar" style="width: 80%;">80%</div>
+            </div>
+            <hr>
+            <hr>
+
+
+
+            <!-- multiple progress bars  -->
+            <div class="progress" style="height: 20px;">
+                <div class="progress-bar bg-warning" style="width: 10%;">10%</div>
+                <div class="progress-bar bg-primary" style="width: 38%;">38%</div>
+                <div class="progress-bar bg-success" style="width: 15%;">15%</div>
+                <div class="progress-bar bg-dark" style="width: 32%;">32%</div>
+            </div>
+            <hr>
+            <hr>
+
+
+            <!-- striped bars  -->
+            <div class="progress my-3 bg-dark" style=" height: 20px;">
+                <div class="progress-bar progress-bar-striped" style="width: 80%;">80%</div>
+            </div>
+            <div class="progress my-3" style=" height: 20px;">
+                <div class="progress-bar progress-bar-striped bg-dark" style="width: 80%;">80%</div>
+            </div>
+            <div class="progress my-3" style=" height: 20px;">
+                <div class="progress-bar progress-bar-striped bg-light text-primary" style="width: 80%;">80%</div>
+            </div>
+            <hr>
+            <hr>
+
+
+
+            <!-- multiple striped progress bars  -->
+            <div class="progress" style="height: 20px;">
+                <div class="progress-bar bg-warning progress-bar-striped" style="width: 10%;">10%</div>
+                <div class="progress-bar bg-primary progress-bar-striped" style="width: 38%;">38%</div>
+                <div class="progress-bar bg-success progress-bar-striped" style="width: 15%;">15%</div>
+                <div class="progress-bar bg-dark progress-bar-striped" style="width: 32%;">32%</div>
+            </div>
+            <hr>
+            <hr>
+
+
+
+            <!-- progress-bar-animated  -->
+            <div class="progress my-3" style=" height: 20px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%;">80%</div>
+            </div>
+            <div class="progress my-3" style=" height: 20px;">
+                <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated" style="width: 80%;">80%</div>
+            </div>
+            <div class="progress my-3" style=" height: 20px;">
+                <div class="progress-bar progress-bar-striped bg-light text-primary progress-bar-animated" style="width: 80%;">80%</div>
+            </div>
+            <hr>
+            <hr>
+
+
+
+            <div class="progress bg-success" style="height: 20px;">
+                <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 10%;">10%</div>
+                <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" style="width: 38%;">38%</div>
+                <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 15%;">15%</div>
+                <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width: 12%;">12%</div>
+            </div>  
+
+            <br><br><br><br>
+
+        </div>
+    </body>
+    
+
+</html>

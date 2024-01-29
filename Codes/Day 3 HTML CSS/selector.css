@@ -1,0 +1,36 @@
+/* element selector */
+h1{
+    color: red;
+    background-color: yellow;
+}
+p{
+    font-size: large;
+    color: green;
+}
+span{
+    font-size: 10px;
+    background-color: rgb(90, 24, 182)
+}
+
+
+/* id selector */
+#h1{
+    color: green;
+    background-color: aqua;
+}  
+#span{
+    font-size: 50px;
+    background-color: pink;
+}
+
+
+/* class selector */
+.h1class{
+    color: black;
+    background-color: orange;
+}
+.h1class{
+    columns: green;
+
+}
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <Title>Form Eg</Title>
+        <style>
+            textarea{resize: none;}
+        </style>
+       
+    </head>
+    <body>
+        <h1>Form Eg</h1>
+
+        <form action="./download.avif">
+            <label>Username :-</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" placeholder="Enter Username" size = "10" maxlength="6">
+            <br><br>
+            <label>Password :-</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" placeholder="Enter Password" size = "10">
+            <br><br>
+            <input type="submit" value="Login">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="Clear">
+
+
+            <!-- textarea -->
+            <br><br>
+            <textarea name="" id="" cols="4" rows="5"></textarea>
+            <br><br>
+
+
+            <!-- dropdownList using select -->
+            <select multiple size ="7">
+                <optgroup label="Languages">
+                    <option>Marathi</option>
+                    <option>Telugu</option>
+                    <option>Hindi</option>
+                    <option>English</option>
+                    <option selected>Sanskrit</option>
+                    <option disabled>Spanish</option>
+                    <option>French</option>
+                    <option>Tamil</option>
+                </optgroup>
+                <optgroup label="Maths">
+                    <option>Algebra</option>
+                    <option>Geometry</option>
+                    <option>Calculus</option>
+                    <option>Trignometry</option>
+                </optgroup>
+                <optgroup label="Science">
+                    <option>Physics</option>
+                    <option>Chemistry</option>
+                    <option>Biology</option>
+                </optgroup>
+                <optgroup label="Social Science" disabled>
+                    <option>History</option>
+                    <option>Geography</option>
+                    <option>Civics</option>
+                    <option>Economics</option>
+                </optgroup>
+            </select>
+        </form>
+    </body>
+</html>

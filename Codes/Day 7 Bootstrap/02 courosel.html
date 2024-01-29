@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cards Assignment</title>
+         <!-- linkning CDN -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+         <style>
+            
+         </style>
+    </head>
+
+    <body>
+
+        <!-- !!! when carousel-fade is applied prev-icon and next-icon will not be shown on screen !!! -->
+        <!-- <div class="carousel slide carousel-fade" data-touch="false" data-ride="carousel" id="mycarousel"> -->
+
+        <div class="carousel slide" data-touch="false" data-ride="carousel" id="mycarousel">
+            <div class="carousel-inner">
+                <!--##### 02 Add Controls Here in carousel-inner-->
+                <a href="#mycarousel" data-slide="prev" class="carousel-control-prev">
+                    <div class="carousel-control-prev-icon"></div>
+                </a>
+                <a href="#mycarousel" data-slide="next" class="carousel-control-next">
+                    <div class="carousel-control-next-icon"></div>
+                </a>
+                <!--##### 03 Add Indicators Here in carousel-inner-->
+                <ol class="carousel-indicators">
+                    <li data-target="#mycarousel" data-slide-to="0"></li>
+                    <li data-target="#mycarousel" data-slide-to="1"></li>
+                    <li data-target="#mycarousel" data-slide-to="2"></li>
+                    <li data-target="#mycarousel" data-slide-to="3"></li>
+                    <li data-target="#mycarousel" data-slide-to="4"></li>
+                    <li data-target="#mycarousel" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-item active">
+                    <img src="Landscape01.jpeg" style="height: 500px;" class="w-100">
+                    <div class="carousel-caption">
+                        <h5>Mountains</h5>
+                        <p>Voluptua et dolor sit ipsum stet dolores lorem, sea ut amet sit aliquyam justo erat voluptua
+                            ipsum,
+                            sit sit et et tempor sed aliquyam nonumy stet gubergren, duo sea dolor ea dolores, diam elitr no
+                            et
+                            stet ipsum. Sadipscing diam justo aliquyam et voluptua. Clita stet eirmod sadipscing sit sed..
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval=250>
+                    <img src="Landscape02.jpeg" style="height: 500px;" class="w-100">
+                    <div class="carousel-caption">
+                        <h5>Himalayas</h5>
+                        <p>Eos et est amet ipsum sanctus. Ipsum diam et voluptua erat at dolore lorem invidunt. Accusam
+                            aliquyam
+                            amet no sit consetetur eos eos lorem. Ea stet takimata duo amet dolor et gubergren lorem, eos
+                            sea
+                            vero no vero diam kasd, dolores consetetur stet sadipscing nonumy est sed et clita diam,.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Landscape03.jpeg" style="height: 500px;" class="w-100">
+                    <div class="carousel-caption">
+                        <h5>Lake View</h5>
+                        <p>Amet eirmod dolore magna magna sed ipsum vero sit lorem, sed ea sea sanctus duo sit voluptua vero
+                            tempor. Vero dolores ut sed dolor dolore labore dolor amet, tempor sed magna ut eirmod dolores
+                            diam
+                            elitr est ipsum. Ea consetetur ipsum diam et diam sit no stet labore. Ut amet.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Landscape04.jpeg" style="height: 500px;" class="w-100">
+                    <div class="carousel-caption">
+                        <h5>Waterfall</h5>
+                        <p>Lorem diam sed et dolor elitr magna. Dolores ipsum labore ipsum sed dolore erat duo amet et. Et
+                            stet
+                            sed voluptua ea clita diam gubergren, est et nonumy sit consetetur tempor no ea erat tempor. Et
+                            diam
+                            aliquyam nonumy sed tempor ea ut. Stet dolore kasd at erat. Amet labore.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card w-25 m-auto">
+                        <div class="card-body">
+                            <p class="h2 card-title">Title</p>
+                            <p class="card-text">Aliquyam ut kasd kasd diam rebum amet. Consetetur et kasd sit takimata ut
+                                takimata. Dolore rebum erat ipsum sit sit sit, tempor duo gubergren stet tempor nonumy
+                                sanctus
+                                rebum accusam, aliquyam dolore lorem dolore vero dolore voluptua. Nonumy diam aliquyam ipsum
+                                amet diam, nonumy diam voluptua magna justo amet sed lorem, sed est dolore dolores no sit
+                                sed
+                                dolor et lorem, diam sed justo vero diam et eos et, erat amet lorem at ipsum eirmod.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-outline-info btn-block">Learn More</a>
+                            <a href="#" class="btn btn-outline-success btn-block">add to cart</a>
+                            <a href="#" class="btn btn-outline-secondary btn-block">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="carousel-item">
+                    <div class="card-deck">
+                        <div class="card w-25 ">
+                            <div class="card-body">
+                                <p class="h2 card-title">Title</p>
+                                <p class="card-text">Aliquyam ut kasd kasd diam rebum amet. Consetetur et kasd sit takimata
+                                    ut
+                                    takimata. Dolore rebum erat ipsum sit sit sit, tempor duo gubergren stet tempor nonumy
+                                    sanctus rebum accusam, aliquyam dolore lorem dolore vero dolore voluptua. Nonumy diam
+                                    aliquyam ipsum amet diam, nonumy diam voluptua magna justo amet sed lorem, sed est
+                                    dolore
+                                    dolores no sit sed dolor et lorem, diam sed justo vero diam et eos et, erat amet lorem
+                                    at
+                                    ipsum eirmod.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-outline-info btn-block">Learn More</a>
+                                <a href="#" class="btn btn-outline-success btn-block">add to cart</a>
+                                <a href="#" class="btn btn-outline-secondary btn-block">Buy Now</a>
+                            </div>
+                        </div>
+    
+    
+                        <div class="card w-25 ">
+                            <div class="card-body">
+                                <p class="h2 card-title">Title</p>
+                                <p class="card-text">Aliquyam ut kasd kasd diam rebum amet. Consetetur et kasd sit takimata
+                                    ut
+                                    takimata. Dolore rebum erat ipsum sit sit sit, tempor duo gubergren stet tempor nonumy
+                                    sanctus rebum accusam, aliquyam dolore lorem dolore vero dolore voluptua. Nonumy diam
+                                    aliquyam ipsum amet diam, nonumy diam voluptua magna justo amet sed lorem, sed est
+                                    dolore
+                                    dolores no sit sed dolor et lorem, diam sed justo vero diam et eos et, erat amet lorem
+                                    at
+                                    ipsum eirmod.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-outline-info btn-block">Learn More</a>
+                                <a href="#" class="btn btn-outline-success btn-block">add to cart</a>
+                                <a href="#" class="btn btn-outline-secondary btn-block">Buy Now</a>
+                            </div>
+                        </div>
+    
+    
+                        <div class="card w-25 ">
+                            <div class="card-body">
+                                <p class="h2 card-title">Title</p>
+                                <p class="card-text">Aliquyam ut kasd kasd diam rebum amet. Consetetur et kasd sit takimata
+                                    ut
+                                    takimata. Dolore rebum erat ipsum sit sit sit, tempor duo gubergren stet tempor nonumy
+                                    sanctus rebum accusam, aliquyam dolore lorem dolore vero dolore voluptua. Nonumy diam
+                                    aliquyam ipsum amet diam, nonumy diam voluptua magna justo amet sed lorem, sed est
+                                    dolore
+                                    dolores no sit sed dolor et lorem, diam sed justo vero diam et eos et, erat amet lorem
+                                    at
+                                    ipsum eirmod.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-outline-info btn-block">Learn More</a>
+                                <a href="#" class="btn btn-outline-success btn-block">add to cart</a>
+                                <a href="#" class="btn btn-outline-secondary btn-block">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                </div>
+            </div>
+    </body>
+    
+    
+
+</html>
