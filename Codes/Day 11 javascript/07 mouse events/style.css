@@ -1,0 +1,22 @@
+.square{
+    height : 200px;
+    width: 200px;                
+    border : 2px double black;
+    margin : 10px;
+}
+.ovl{
+    height : 200px;
+    width: 200px;                
+    border : 2px double blue;
+    border-radius: 50%;
+    margin : 10px;
+}
+
+.blink{
+    animation:  0.25s blinking infinite;
+}
+
+@keyframes blinking {
+    0%{background: red;}
+    50%{background: white;}
+}
