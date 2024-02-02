@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- jQuery CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+            $(document).ready(()=>{
+                $("button").hide();
+
+                $("p").click(()=>{
+                    $("p").hide();
+                    $("button").show();
+                });
+
+                $("button").click(()=>{
+                    $("button").hide();
+                    $("p").show();
+                });
+
+            })
+        </script>
+
+
+
+    </head>
+    <body>
+        <p>Dont click me, else i will disappear</p>
+        <button>Show</button>
+
+    </body>
+</html>
