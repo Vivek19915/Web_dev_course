@@ -1,9 +1,11 @@
 let http = require('http')
 let url = require('url')
+// Creating an HTTP server: 
+
 
 let server = http.createServer((req , res)=>{
     //url will be in req
-    let obj = url.parse(req.url,true).query
+    let obj = url.parse(req.url,true).query            //It extracts the GET parameters from the request URL  
     let uname = obj.username
     let upwd = obj.password
     
@@ -21,3 +23,4 @@ server.listen(8080)
 console.log("Server listening port no 8080")
 
 // url http://localhost:8080/?uname=admin&upwd=admin
+//HHTP GET PARAMETERS KE CASE ME AESI HI LINKHOGI

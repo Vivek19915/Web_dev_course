@@ -1,0 +1,2 @@
+GET Request: Data is appended to the URL in the form of query parameters. These parameters are visible in the URL and are limited in length.
+POST Request: Data is sent in the body of the request. This allows for larger amounts of data to be transmitted compared to GET requests, and the data is not directly visible in the URL.

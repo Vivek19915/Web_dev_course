@@ -37,3 +37,19 @@ app.listen(port,()=>{
 })
 
 
+/*
+    Start server
+    >node server
+    Test Rest api in postman with url
+    http://localhost:8080/login
+    in postman
+        1.  req     -> post
+            body    -> raw
+                    -> text <-> json
+                    {"uname":"admin","upwd":"admin"}
+
+        2.  req     -> post
+            body    -> x-www...
+                    -> key and values
+                   
+*/
