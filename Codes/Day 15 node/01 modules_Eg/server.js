@@ -3,12 +3,14 @@ let express = require('express')
 let login = require('./login/login')   //self modules importing
 let logout = require('./logout/logout')   //self modules importing
 
-//create rets object 
+//create rest object 
 let app = express()
 
 //use modules
 app.use('/login',login)         // to go to login module
 app.use('/logout',logout)       // to go to logout module
+
+
 //asign port
 let port = 8080
 app.listen(port)
