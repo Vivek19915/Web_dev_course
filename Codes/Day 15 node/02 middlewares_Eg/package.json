@@ -1,0 +1,16 @@
+{
+  "name": "02-middlewares_eg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "my_fun.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
