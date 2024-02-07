@@ -1,0 +1,43 @@
+1. Find topper of CS branch
+db.students.find({$where:function(){return (this.Branch=="CS")}}).sort({percentage:-1}).limit(1)
+{ "_id" : ObjectId("65c2fea69212bdf55fbe3860"), "StudentName" : "Vivek", "Branch" : "CS", "percentage" : 95, "gender" : "male" }
+
+
+2. Find College topper
+db.students.find().sort({percentage:-1}).limit(1)
+{ "_id" : ObjectId("65c2ff2b9212bdf55fbe3864"), "StudentName" : "Ishika", "Branch" : "BT", "percentage" : 98, "gender" : "female" }
+
+3. Find Topper from girls
+db.students.find({$where:function(){return (this.gender=="female")}}).sort({percentage:-1}).limit(1)
+{ "_id" : ObjectId("65c2ff2b9212bdf55fbe3864"), "StudentName" : "Ishika", "Branch" : "BT", "percentage" : 98, "gender" : "female" }
+
+4. Find Topper from boys
+db.students.find({$where:function(){return (this.gender=="male")}}).sort({percentage:-1}).limit(1)
+{ "_id" : ObjectId("65c2fea69212bdf55fbe3860"), "StudentName" : "Vivek", "Branch" : "CS", "percentage" : 95, "gender" : "male" }
+
+5. Sort according to percentage
+db.students.find().sort({percentage:1})
+
+6. Find Top 3 students 
+db.students.find().sort({percentage:-1}).limit(3)
+{ "_id" : ObjectId("65c2ff2b9212bdf55fbe3864"), "StudentName" : "Ishika", "Branch" : "BT", "percentage" : 98, "gender" : "female" }
+{ "_id" : ObjectId("65c2fea69212bdf55fbe3860"), "StudentName" : "Vivek", "Branch" : "CS", "percentage" : 95, "gender" : "male" }
+{ "_id" : ObjectId("65c302dc9212bdf55fbe386f"), "StudentName" : "Alice Johnson", "Branch" : "Computer Science", "percentage" : 92.3, "gender" : "Female" }
+
+7. Find slow learners (less percentage)
+db.students.find({$where: function(){return(this.percentage<=60)}})
+{ "_id" : ObjectId("65c300219212bdf55fbe3869"), "StudentName" : "Sandeep", "Branch" : "PIE", "percentage" : 56, "gender" : "male" }
+{ "_id" : ObjectId("65c300659212bdf55fbe386d"), "StudentName" : "Nandini", "Branch" : "IT", "percentage" : 45, "gender" : "female" }
+
+
+8.second topper 
+db.students.find().sort({percentage:-1}).limit(2)[1]                 //[1]->second topper [2]->third topper [0]->first topper
+{
+        "_id" : ObjectId("65c2fea69212bdf55fbe3860"),
+        "StudentName" : "Vivek",
+        "Branch" : "CS",
+        "percentage" : 95,
+        "gender" : "male"
+}
+db.students.aggregate([{$sort:{percentage:-1}},{$skip:1},{$limit:1}])
+{ "_id" : ObjectId("65c2fea69212bdf55fbe3860"), "StudentName" : "Vivek", "Branch" : "CS", "percentage" : 95, "gender" : "male" }
