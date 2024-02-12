@@ -1,0 +1,1 @@
+module.exports ="mongodb+srv://admin:admin@cluster0.dui1jrf.mongodb.net/vkcmalls"; ///nodedb we are accessing ndedb database
